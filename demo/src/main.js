@@ -3,6 +3,12 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+
+import "/public/iconfont/demo.css"
+//图标
+import "/public/iconfont/iconfont.css";
+
+
 import "@/assets/css/common.css";
 // 引入公共样式
 import "@/assets/css/reset.css";
