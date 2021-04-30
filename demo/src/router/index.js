@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import ytrouter from '../views/yt/ytrouter.js'
 
 Vue.use(VueRouter)
 
@@ -30,8 +31,11 @@ const routes = [
     name: "tou",
 
     component: () => import("../views/cyl/Tou.vue"),
-  },
+  }, 
+   ...ytrouter
 ];
+
+
 
 const router = new VueRouter({
   mode: 'history',
